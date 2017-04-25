@@ -27,25 +27,6 @@ let app = angular.module('app', [
 ]);
 
 app.directive('test', test);
-app.factory('User', User)
-//app.controller('gridController', gridController)
-
-app.config(($routeProvider, $locationProvider) => {
-  $locationProvider.html5Mode(true);
-  // $routeProvider.when(path, { templateUrl, controller });
-  $routeProvider
-    .when('/', {
-      template: bootTemplate
-    })
-    .when('/home', {
-      template: homeTemplate
-    })
-    .when('/grid', {
-      template: gridTemplate,
-      controller: gridController
-    });
-
-})
-
+app.factory('User', User);
 
 export default app;
