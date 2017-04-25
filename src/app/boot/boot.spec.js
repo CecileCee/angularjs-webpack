@@ -1,15 +1,15 @@
-import app from './app';
+import boot from './boot';
 
-describe('app', () => {
+describe('boot', () => {
 
-  describe('AppCtrl', () => {
+  describe('BootCtrl', () => {
     let ctrl;
 
     beforeEach(() => {
-      angular.mock.module(app);
+      angular.mock.module(boot);
 
       angular.mock.inject(($controller) => {
-        ctrl = $controller('AppCtrl', {});
+        ctrl = $controller('BootCtrl', {});
       });
     });
 
