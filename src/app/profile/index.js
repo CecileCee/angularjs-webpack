@@ -8,7 +8,7 @@ const profileDirective = () => {
 }
 
 const profileController = ($scope, User) => {
-  $scope.user = User.getName();
+  $scope.user = User.get();
 }
 
 const profileModule = angular.module('profile', []);

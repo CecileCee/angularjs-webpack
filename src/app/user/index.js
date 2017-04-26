@@ -1,10 +1,10 @@
-const user = () => {
+const User = () => {
+
   return {
-    getName : (id) => {
-      // return Restangular.one('user').get(id);
-      return 'Vladimir'
+    get () {
+      return 'Vladimir';
     }
   }
 }
 
-export default user;
+export default User;
